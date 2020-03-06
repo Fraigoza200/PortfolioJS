@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Fraigoza200.github.io/PortfolioJS",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
