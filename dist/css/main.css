@@ -102,7 +102,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("/dist/assets/background.JPG");
+    background: url("/dist/assets/background.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -263,14 +263,18 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../dist/assets/smallportrait.JPG");
+      background: url("../dist/assets/portrait.jpg");
       background-repeat: no-repeat;
       border-radius: 30px;
       height: 135px;
       width: 80px;
       object-fit: cover; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
