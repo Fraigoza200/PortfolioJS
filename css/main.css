@@ -55,17 +55,17 @@
     .menu-branding .portrait {
       width: 200px;
       height: 330px;
-      background: url("../dist/assets/IMG_5669.jpg");
+      background: url("../assets/IMG_5669.jpg");
       background-repeat: no-repeat;
       border-radius: 50px;
-      border: solid 3px #e9dc96; }
+      border: solid 3px #ec8464; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 1.0s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #e9dc96; }
+      color: #ec8464; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 1.0s ease-out; }
     .menu .nav-link:hover {
-      color: #e9dc96; }
+      color: #ec8464; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -102,7 +102,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("/dist/assets/background.jpg");
+    background: url(../assets/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -135,7 +135,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #e9dc96; }
+  color: #ec8464; }
 
 main {
   padding: 4rem;
@@ -145,7 +145,7 @@ main {
     main .icons a {
       padding: 0.5rem; }
       main .icons a:hover {
-        color: #e9dc96;
+        color: #ec8464;
         transition: all 1.0s ease-out; }
   main#home {
     overflow: hidden; }
@@ -161,7 +161,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50px;
-    border: #e9dc96 3px solid;
+    border: #ec8464 3px solid;
     height: 290px;
     width: 210px;
     object-fit: cover; }
@@ -177,7 +177,7 @@ main {
   .about-info .job {
     background: #42384e;
     padding: 0.5rem;
-    border-bottom: #e9dc96 5px solid; }
+    border-bottom: #ec8464 5px solid; }
 
 .projects {
   display: grid;
@@ -188,7 +188,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #e9dc96;
+      border-color: #ec8464;
       transition: all 1.0s ease-out; }
 
 .boxes {
@@ -205,7 +205,7 @@ main {
     transition: all 1.0s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #e9dc96;
+      background: #ec8464;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -216,7 +216,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #e9dc96;
+    background: #ec8464;
     color: #000; }
 
 .btn-dark {
