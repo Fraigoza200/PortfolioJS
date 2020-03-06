@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 200px;
       height: 330px;
-      background: url("/dist/assets/IMG_5669.jpg");
+      background: url("../assets/IMG_5669.jpg");
       background-repeat: no-repeat;
       border-radius: 50px;
       border: solid 3px #e9dc96; }
