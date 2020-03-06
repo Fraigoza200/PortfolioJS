@@ -83,10 +83,11 @@
         }
 
         .portrait {
-            width: 350px;
-            height: 350px;
-            background: url('/dist/assets/IMG_5669\ \(1\).PNG');
-            border-radius: 50%;
+            width: 200px;
+            height: 330px;
+            background: url('/dist/assets/IMG_5669.jpg');
+            background-repeat: no-repeat;
+            border-radius: 50px;
             border: solid 3px $secondary-color;
         }
     }
