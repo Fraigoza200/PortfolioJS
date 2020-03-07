@@ -77,11 +77,15 @@
 
 
 @include mediaSmall {
-   main#home h1 {
-       margin-top: 10vh;
-   }
-
-   .projects {
-    grid-template-columns: 1fr;
-}
+    main#home h1 {
+          margin-top: 10vh;
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+  }
+   
+  .boxes span {
+      width:100%;
+  }
 }
