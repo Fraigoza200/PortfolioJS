@@ -2,17 +2,20 @@
   "name": "portfoliojs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "homepage": "https://Fraigoza200.github.io/PortfolioJS",
   "dependencies": {
+    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "nodemailer": "^6.4.4",
+    "nodemailer-mailgun-transport": "^2.0.0"
   }
 }
