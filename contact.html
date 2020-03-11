@@ -47,7 +47,45 @@
     <h2 class="sm-heading">
     
     </h2>
-  <div class="boxes">  
+    <div class="wrapper">
+        <div class="company-info">
+        <h3>Contact Info</h3>
+        <ul>
+            <li><i class="fa fa-phone"></i> (714)560-3749</li>
+            <li><i class="fa fa-envelope"></i> raigoza.frankie@gmail.com</li>
+            <li><i class="fa fa-road"></i> Santa Ana, Ca</li>
+        </ul>
+        </div>
+        <div class="contact">
+            <h3>Email Francisco</h3>
+            <form>
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </p>
+                <p>
+                    <label>Company</label>
+                    <input type="text" name='company' id="company" placeholder="Company">
+                </p>
+                <p>
+                    <label>Subject</label>
+                    <input type="text"  id='subject'placeholder="Subject">
+                </p>
+                <p>
+                    <label>Your Email Address</label>
+                    <input type="email" id='email'placeholder="Your Email Address">
+                </p>
+                <p class="full">
+                    <label>Message</label>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Message"></textarea>
+                </p>
+                <p class="full">
+                    <button id='submit'>Send</button>
+                </p>
+            </form>
+        </div>
+    </div>
+  <!-- <div class="boxes">  
      <div>
          <span class="text-secondary">Phone Number:</span>
          (714) 560-3749
@@ -74,7 +112,7 @@
      
      
 
-</div>
+</div> -->
     
 </main>
 
@@ -105,6 +143,8 @@
     document.getElementById('subject').value = ''
     document.getElementById('email').value = ''
     document.getElementById('text').value = ''
+    document.getElementById('name').value = ''
+    document.getElementById('company').value = ''
 
         const data = {
             subject, email, text
