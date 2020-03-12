@@ -22,6 +22,4 @@ app.post('/email', (req,res) => {
     })
 })
 
-app.listen(8080, () => {
-    console.log('server listening')
-})
+app.listen(process.env.PORT || 3001)
