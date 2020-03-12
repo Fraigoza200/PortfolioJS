@@ -1,11 +1,11 @@
 const nodemailer = require('nodemailer')
 const mailGun = require('nodemailer-mailgun-transport')
-
+require('dotenv').config()
 
 const auth = {
     auth: {
-        api_key: 'process.env.SECRET',
-        domain: 'process.env.HOST'
+        api_key: process.env.SECRET,
+        domain: process.env.HOST
     }
 }
 
@@ -16,16 +16,16 @@ const sendMail = (email,subject, text, cb) => {
 
     const mailOptions = {
         from: email,
-        to: 'raigoza.frankie@gmail.com',
+        to: 'frankieraigoza@gmail.com',
         subject: subject,
         text: text
     }
     
-    transporter.sendMail(mailOptions, function(err,data){
+    transporter.sendMail(mailOptions, (err,data) =>{
         if (err) {
             cb(err,null)
         } else {
-            cb(null, data)
+            cb(data)
         }
     })
 }
