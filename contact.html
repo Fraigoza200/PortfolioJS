@@ -139,23 +139,22 @@
 
     console.log(subject, email, text)
 
+    
+            const data = {
+                subject, email, text
+            }
+    
+            axios.post('/email', data, function(){
+                console.log('server recieved data')
+            })
+            .then((response) => console.log(response))
+            .catch(e => console.log(e))
 
     document.getElementById('subject').value = ''
     document.getElementById('email').value = ''
     document.getElementById('text').value = ''
     document.getElementById('name').value = ''
     document.getElementById('company').value = ''
-
-        const data = {
-            subject, email, text
-        }
-
-        axios.post('/email', data, () => {
-            console.log('server recieved data')
-        })
-        .then((response) => console.log(response))
-        .catch(e => console.log(e))
-
     })
 </script>
 </body>
