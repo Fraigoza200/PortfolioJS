@@ -239,6 +239,7 @@ main {
   .company-info h3, .company-info ul {
     text-align: center;
     margin: 0 0 1rem 0;
+    color: black;
   }
 
   .contact {
