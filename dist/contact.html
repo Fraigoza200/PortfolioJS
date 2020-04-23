@@ -98,8 +98,6 @@
 
 
 <script>
-
-
     document.getElementById('submit').addEventListener('click', e => {
         e.preventDefault()
 
@@ -109,25 +107,26 @@
             name = document.getElementById('name').value
             company = document.getElementById('company').value
     
-        if(subject === null || email === null || text === null || name === null || company === null ) {
-            console.log('error')
-            swal("Error", "Please fill out all input areas", "error")
-        }else{
-            console.log('hi')
-            const data = {
+       if(!subject || !email || !text || !name || !company) {
+           swal("Error", "Please fill out all input areas", "error") 
+           
+           console.log('error')
+
+            }else{ 
+
+             console.log('got it')
+        const data = {
                 subject, email, text
             }
     
             axios.post('/email', data, function(){
                 console.log('server recieved data')
             })
-            .then((response) => console.log(response))
-            .catch(e => console.log(e))
+                .then((response) => console.log(response))
+                .catch(e => console.error(e))
 
-            swal("Message sent", "Thank You", "success")
-
+             swal("Message sent", "Thank You", "success")
         }
-
 
     document.getElementById('subject').value = ''
     document.getElementById('email').value = ''
